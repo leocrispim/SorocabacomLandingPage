@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { createGlobalStyle } from 'styled-components';
-import FirstBackground from './Images/FirstBackground.png';
+import FirstBackground from './Images/FirstBG@2.png';
 import CardBackground from './Images/CardBackground.svg';
 
 export const GlobalStyle = createGlobalStyle`
@@ -13,40 +13,47 @@ export const Header = styled.header`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10%;
+    height: 20%;
     background: #363636 0% 0% no-repeat padding-box;
     font: bold 18px/24px Montserrat;
     letter-spacing: 0.68px;
     color: #FFFFFF;
     text-transform: uppercase;
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
 `
 
 export const HeaderLogo = styled.img`
     width: 5%;
-    height: 5%;
+    height: 100%;
     margin-right: 3%;
 `
 
 export const FirstContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 1fr 10fr;
     background: transparent;
     background-image: url(${FirstBackground});
     background-size: cover;
     opacity: 0.85;
-    height: 100vh;
+    height: 125vh;
 `
 
 export const GameCardContainer = styled.div`
     background-image: url(${CardBackground});
     background-size: fill;
     background-repeat: no-repeat;
+    grid-row: 2;
     grid-column: 2;
     display: grid;
     grid-template-rows: 1fr 6fr 2fr;
     grid-template-columns: 1fr 2fr 1fr;
     padding: 1%;
-    margin-top: -1.45%;
+    margin-top: -71.5%;
+    margin-left: 3.8%;
+    width: 93%;
     justify-items: center;
 `
 
@@ -56,8 +63,10 @@ export const GameImageCardImg = styled.img`
     grid-column-end: 4;
     grid-row: 2;
     align-self: center;
-    height: 80%;
+    height: 78%;
     width: auto;
+    /* top: 6%; */
+    position: relative;
 `
 
 export const GameCardTitle = styled.p`
@@ -80,25 +89,31 @@ export const GameCardText = styled.p`
 `
 
 export const SecondContainer = styled.div`
-    height: 660px;
-    background: #363636 0% 0% no-repeat padding-box;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
     grid-template-rows: 1fr;
-    grid-column-gap: 5%;
+    grid-column-gap: 5vw;
+    background: #363636 0% 0% no-repeat padding-box;
+    height: 100vh;
     position: relative;
     padding-bottom: 10%;
 `
 
 export const CharacterCardContainer = styled.div`
-    background-color: grey;
-    border-radius: 80px;
+    background-color: #363636;
+    border-radius: 50px;
+    border: solid white 2px;
+    height: 48%;
+    width: 90%;
+    margin-top: 40%;
+    position: relative;
 `
 
 export const CharacterCardImage = styled.img`
     position: absolute;
-    height: 50%;
-    bottom: 45%;
+    height: 126%;
+    bottom: -3%;
+    left: -6.8%;
 `
 
 export const CharacterSwitchArrow = styled.button`
@@ -106,6 +121,16 @@ export const CharacterSwitchArrow = styled.button`
     border-color: red;
     height: 12%;
     width: 60%;
+    justify-self: right;
+    align-self: center;
+`
+
+export const CharacterSwitchArrow2 = styled.button`
+    border-radius: 50%;
+    border-color: red;
+    height: 12%;
+    width: 60%;
+    justify-self: left;
     align-self: center;
 `
 

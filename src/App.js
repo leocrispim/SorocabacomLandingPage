@@ -1,6 +1,6 @@
 import * as SC from './Styled';
 import GiantGamesLogo from './Images/GiantGamesLogo.png';
-import Redheadimage from './Images/Redheadimage@2.png';
+import Redheadimage from './Images/Redheadimage.png';
 import Grant from './Images/Grant.png';
 import Red from './Images/Red.png';
 import Sybil from './Images/Sybil_2.png';
@@ -8,18 +8,18 @@ import Sybil from './Images/Sybil_2.png';
 function App() {
   return (
   <>
-    <SC.Header>
+     <SC.FirstContainer>
+
+     <SC.Header>
       <SC.HeaderLogo src={GiantGamesLogo}/>
       SUPERGIANT GAMES
     </SC.Header>
-
-     <SC.FirstContainer>
 
       <SC.GameCardContainer>
 
         <SC.GameCardTitle>TRANSISTOR - RED THE SINGER</SC.GameCardTitle>
         <SC.GameImageCardImg src={Redheadimage} />
-        <SC.GameCardText>"Olha, o que quer que você esteja pensando, me faça um favor, não solte."</SC.GameCardText>
+        <SC.GameCardText>"Olha, o que quer que você <br/> esteja pensando, me faça <br /> um favor, não solte."</SC.GameCardText>
 
       </SC.GameCardContainer>
 
@@ -40,7 +40,7 @@ function App() {
         <SC.CharacterCardImage src={Sybil}/>
       </SC.CharacterCardContainer>
 
-      <SC.CharacterSwitchArrow />
+      <SC.CharacterSwitchArrow2 />
     </SC.SecondContainer>
 
     <SC.ThirdContainer>

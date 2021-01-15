@@ -63,10 +63,33 @@ export const GameImageCardImg = styled.img`
     grid-column-end: 4;
     grid-row: 2;
     align-self: center;
-    height: 78%;
-    width: auto;
-    /* top: 6%; */
+    height: 80%;
+    margin-top: -3.5%;
+    right: 0.3%;
+    width: 90%;
     position: relative;
+`
+
+export const FeatherContainer = styled.div`
+    grid-row: 3;
+    position: absolute;
+`
+
+export const TopRightFeather = styled.img`
+    position: relative;
+    right: 30%;
+`
+
+export const BottomRightFeather = styled.img`
+    position: relative;
+    right: 60%;
+`
+
+export const MidLeftFeather = styled.img`
+    position: absolute;
+    left: -15.8%;
+    bottom: -100.5%;
+    height: 50%;
 `
 
 export const GameCardTitle = styled.p`
@@ -153,19 +176,19 @@ export const CharacterSwitchArrow2 = styled.button`
 
 export const ThirdContainer = styled.div`
     position: relative;
-    height: 400px;
+    height: 80vh;
     background: transparent linear-gradient(143deg, #7DEDE2 0%, #58B790 100%) 0% 0% no-repeat padding-box;
 `
 
 export const FormWhiteBox = styled.div`
     position: absolute;
-    height: 112%;
+    height: 100%;
     width: 42%;
     background-color: white;
-    top: -16%;
+    top: -6.5%;
     left: 20.5%;
-    border-radius: 6px;
-    padding: 3% 8% 3% 8%;
+    border-radius: 5px;
+    padding: 1.5% 8% 3% 8%;
 `
 
 export const FormWhiteBoxTitle = styled.p`

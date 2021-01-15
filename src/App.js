@@ -4,6 +4,9 @@ import Redheadimage from './Images/Redheadimage.png';
 import Grant from './Images/Grant.png';
 import Red from './Images/Red.png';
 import Sybil from './Images/Sybil_2.png';
+import TopRightFeather from './Images/Feather-topright.png';
+import BottomRightFeather from './Images/Feather-bottomright.png';
+import MidLeftFeather from './Images/Feather-midleft.png';
 
 function App() {
   return (
@@ -20,6 +23,11 @@ function App() {
         <SC.GameCardTitle>TRANSISTOR - RED THE SINGER</SC.GameCardTitle>
         <SC.GameImageCardImg src={Redheadimage} />
         <SC.GameCardText>"Olha, o que quer que você <br/> esteja pensando, me faça <br /> um favor, não solte."</SC.GameCardText>
+        <SC.FeatherContainer>
+          <SC.TopRightFeather src={TopRightFeather}/>
+          <SC.BottomRightFeather src={BottomRightFeather}/>
+          <SC.MidLeftFeather src={MidLeftFeather}/>
+        </SC.FeatherContainer>
 
       </SC.GameCardContainer>
 

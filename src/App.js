@@ -28,17 +28,26 @@ function App() {
     <SC.SecondContainer>
       <SC.CharacterSwitchArrow />
 
-      <SC.CharacterCardContainer>
-        <SC.CharacterCardImage src={Grant}/>
-      </SC.CharacterCardContainer>
+      <SC.CharacterCardWhiteBox>
+        <SC.CharacterCardContainer>
+          <SC.CharacterCardImage src={Grant}/>
+        </SC.CharacterCardContainer>
+        <SC.CharacterWhiteBoxText>A Camerata foi apenas os dois no início, e suas fileiras nunca foram destinadas a exceder um número a ser contado em uma mão.</SC.CharacterWhiteBoxText>
+      </SC.CharacterCardWhiteBox>
 
-      <SC.CharacterCardContainer>
-        <SC.CharacterCardImage src={Red}/>
-      </SC.CharacterCardContainer>
+      <SC.CharacterCardWhiteBox>
+        <SC.CharacterCardContainer>
+          <SC.CharacterCardImage src={Red}/>
+        </SC.CharacterCardContainer>
+        <SC.CharacterWhiteBoxText>Red, uma jovem cantora, entrou em posse do Transistor. Sendo a poderosa espada falante. O Grupo Possessores quer tanto ela quanto o Transistor e está perseguindo implacavelmente a sua procura.</SC.CharacterWhiteBoxText>
+      </SC.CharacterCardWhiteBox>
 
-      <SC.CharacterCardContainer>
-        <SC.CharacterCardImage src={Sybil}/>
-      </SC.CharacterCardContainer>
+      <SC.CharacterCardWhiteBox>
+        <SC.CharacterCardContainer>
+          <SC.CharacterCardImage src={Sybil}/>
+        </SC.CharacterCardContainer>
+        <SC.CharacterWhiteBoxText>Sybil é descrita pelo Transistor como sendo os "olhos e ouvidos" da Camerata.</SC.CharacterWhiteBoxText>
+      </SC.CharacterCardWhiteBox>
 
       <SC.CharacterSwitchArrow2 />
     </SC.SecondContainer>

@@ -87,9 +87,9 @@ export const BottomRightFeather = styled.img`
 
 export const MidLeftFeather = styled.img`
     position: absolute;
-    left: -15.8%;
-    bottom: -100.5%;
-    height: 50%;
+    left: -8.3%;
+    bottom: -93.7%;
+    height: 55%;
 `
 
 export const GameCardTitle = styled.p`

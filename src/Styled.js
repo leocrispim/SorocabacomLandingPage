@@ -103,17 +103,34 @@ export const CharacterCardContainer = styled.div`
     background-color: #363636;
     border-radius: 50px;
     border: solid white 2px;
-    height: 48%;
-    width: 90%;
-    margin-top: 40%;
-    position: relative;
+    height: 71.3%;
+    width: 92%;
+    margin-top: -24%;
+    margin-left: 3.4%;
 `
 
 export const CharacterCardImage = styled.img`
     position: absolute;
-    height: 126%;
-    bottom: -3%;
-    left: -6.8%;
+    height: 90%;
+    bottom: 42%;
+    left: -1.9%;
+`
+
+export const CharacterCardWhiteBox = styled.div`
+    background-color: white;
+    border-radius: 20px;
+    height: 72.5%;
+    width: 106%;
+    margin-top: 65%;
+    position: relative;
+`
+
+export const CharacterWhiteBoxText = styled.p`
+    text-align: left;
+    font: normal normal normal 15px/16px Open Sans;
+    letter-spacing: 0px;
+    color: #363636;
+    padding: 2% 11.5% 0 11.5%;
 `
 
 export const CharacterSwitchArrow = styled.button`

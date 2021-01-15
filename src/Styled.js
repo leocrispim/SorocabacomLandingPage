@@ -2,10 +2,15 @@ import styled from 'styled-components'
 import { createGlobalStyle } from 'styled-components';
 import FirstBackground from './Images/FirstBG@2.png';
 import CardBackground from './Images/CardBackground.svg';
+import Grant from './Images/Grant.png';
 
 export const GlobalStyle = createGlobalStyle`
     body{
         margin: 0;
+        top: 945px;
+        height: 2505px;
+        width: 1920px;
+        background: transparent linear-gradient(143deg, #7DEDE2 0%, #58B790 100%) 0% 0% no-repeat padding-box;
     }
 `
 
@@ -13,147 +18,165 @@ export const Header = styled.header`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20%;
+    top: 0px;
+    left: 0px;
+    width: 1920px;
+    height: 109px;
     background: #363636 0% 0% no-repeat padding-box;
-    font: bold 18px/24px Montserrat;
+    font: bold 23px/36px Montserrat;
+    text-align: left;
     letter-spacing: 0.68px;
     color: #FFFFFF;
     text-transform: uppercase;
     grid-row: 1;
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 3;
 `
 
 export const HeaderLogo = styled.img`
-    width: 5%;
-    height: 100%;
-    margin-right: 3%;
+    top: 0px;
+    left: 749px;
+    width: 109px;
+    height: 109px;
+    margin-left: -60px;
+    padding-right: 30px;
 `
 
 export const FirstContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-row: 1fr 10fr;
-    background: transparent;
-    background-image: url(${FirstBackground});
-    background-size: cover;
+    grid-template-rows: 1fr 10fr;
+    background: transparent url(${FirstBackground}) 0% 0% no-repeat padding-box;
     opacity: 0.85;
-    height: 125vh;
+    top: 0px;
+    left: 0px;
+    width: 1920px;
+    height: 1080px;
 `
 
 export const GameCardContainer = styled.div`
-    background-image: url(${CardBackground});
-    background-size: fill;
-    background-repeat: no-repeat;
+    background: transparent url(${CardBackground}) 0% 33% no-repeat padding-box;
+    /* box-shadow: 0px 3px 6px #00000099; */
     grid-row: 2;
     grid-column: 2;
     display: grid;
-    grid-template-rows: 1fr 6fr 2fr;
-    grid-template-columns: 1fr 2fr 1fr;
-    padding: 1%;
-    margin-top: -71.5%;
-    margin-left: 3.8%;
-    width: 93%;
+    grid-template-rows: 0.2fr 6fr 25%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    top: 0px;
+    left: 667px;
+    width: 586px;
+    height: 1080px;
     justify-items: center;
 `
 
 export const GameImageCardImg = styled.img`
-    margin-left: 2.3%;
+    top: 163px;
+    left: 700px;
+    height: 754px;
+    width: 526px;
+    /* box-shadow: 0px 3px 6px #00000099; */
+    border-radius: 196px;
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 6;
     grid-row: 2;
-    align-self: center;
-    height: 80%;
-    margin-top: -3.5%;
-    right: 0.3%;
-    width: 90%;
-    position: relative;
+    padding-bottom: 8px;
 `
 
-export const FeatherContainer = styled.div`
-    grid-row: 3;
-    position: absolute;
-`
+// export const FeatherContainer = styled.div`
+//     grid-row: 3;
+//     position: absolute;
+// `
 
-export const TopRightFeather = styled.img`
-    position: relative;
-    right: 30%;
-`
+// export const TopRightFeather = styled.img`
+//     position: relative;
+//     right: 30%;
+// `
 
-export const BottomRightFeather = styled.img`
-    position: relative;
-    right: 60%;
-`
+// export const BottomRightFeather = styled.img`
+//     position: relative;
+//     right: 60%;
+// `
 
-export const MidLeftFeather = styled.img`
-    position: absolute;
-    left: -8.3%;
-    bottom: -93.7%;
-    height: 55%;
-`
+// export const MidLeftFeather = styled.img`
+//     position: absolute;
+//     left: -8.3%;
+//     bottom: -93.7%;
+//     height: 55%;
+// `
 
 export const GameCardTitle = styled.p`
+    top: 121px;
+    left: 697px;
+    width: 240px;
+    height: 20px;
+    margin-left: 30px;
     text-align: center;
-    font: normal normal bold 10px/12px Open Sans;
+    font: normal normal bold 15px/18px Open Sans;
+    letter-spacing: 0px;
     color: #FFFFFF;
     grid-column-start: 1;
     grid-column-end: 3;
-    margin-left: -33%;
 `
 
 export const GameCardText = styled.p`
+    top: 945px;
+    left: 825px;
+    width: 271px;
+    height: 121px;
     text-align: center;
-    font: normal normal normal 14px/16px Open Sans;
+    font: normal normal normal 20px/21px Open Sans;
     letter-spacing: 0px;
     color: #F0F0F2;
-    text-shadow: 0px 3px 6px #00000029;
-    grid-column: 2;
+    /* text-shadow: 0px 3px 6px #00000029; */
+    grid-column-start: 2;
+    grid-column-end: 4;
     grid-row: 3;
 `
 
 export const SecondContainer = styled.div`
+    width: 1920px;
+    height: 1147px;
+    background: #363636 0% 0% no-repeat padding-box;
     display: grid;
     grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
     grid-template-rows: 1fr;
-    grid-column-gap: 5vw;
-    background: #363636 0% 0% no-repeat padding-box;
-    height: 100vh;
+    grid-column-gap: 101px;
     position: relative;
-    padding-bottom: 10%;
 `
 
 export const CharacterCardContainer = styled.div`
-    background-color: #363636;
-    border-radius: 50px;
-    border: solid white 2px;
-    height: 71.3%;
-    width: 92%;
-    margin-top: -24%;
-    margin-left: 3.4%;
+    background: #363636 0% 0% no-repeat padding-box;
+    border: 3px solid #FFFFFF;
+    border-radius: 86px;
+    width: 364px;
+    height: 440px;
+    top: 206.88px;
 `
 
 export const CharacterCardImage = styled.img`
     position: absolute;
-    height: 90%;
-    bottom: 42%;
-    left: -1.9%;
+    width: 379px;
+    height: 525px;
+    /* box-shadow: 0px 3px 6px #FF060629; */
+    border-radius: 99px;
+    background: transparent url(${Grant}) 0% 0% no-repeat padding-box;
 `
 
 export const CharacterCardWhiteBox = styled.div`
-    background-color: white;
-    border-radius: 20px;
-    height: 72.5%;
-    width: 106%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 27px;
+    /* box-shadow: 0px 3px 6px #FFFFFF63; */
+    width: 387px;
+    height: 613px;
     margin-top: 65%;
     position: relative;
 `
 
 export const CharacterWhiteBoxText = styled.p`
     text-align: left;
-    font: normal normal normal 15px/16px Open Sans;
+    font: normal normal normal 20px/25px Open Sans;
     letter-spacing: 0px;
     color: #363636;
-    padding: 2% 11.5% 0 11.5%;
 `
 
 export const CharacterSwitchArrow = styled.button`
@@ -174,45 +197,45 @@ export const CharacterSwitchArrow2 = styled.button`
     align-self: center;
 `
 
-export const ThirdContainer = styled.div`
-    position: relative;
-    height: 80vh;
-    background: transparent linear-gradient(143deg, #7DEDE2 0%, #58B790 100%) 0% 0% no-repeat padding-box;
-`
+// export const ThirdContainer = styled.div`
+//     position: relative;
+//     height: 80vh;
+//     background: transparent linear-gradient(143deg, #7DEDE2 0%, #58B790 100%) 0% 0% no-repeat padding-box;
+// `
 
-export const FormWhiteBox = styled.div`
-    position: absolute;
-    height: 100%;
-    width: 42%;
-    background-color: white;
-    top: -6.5%;
-    left: 20.5%;
-    border-radius: 5px;
-    padding: 1.5% 8% 3% 8%;
-`
+// export const FormWhiteBox = styled.div`
+//     position: absolute;
+//     height: 100%;
+//     width: 42%;
+//     background-color: white;
+//     top: -6.5%;
+//     left: 20.5%;
+//     border-radius: 5px;
+//     padding: 1.5% 8% 3% 8%;
+// `
 
-export const FormWhiteBoxTitle = styled.p`
-    text-align: center;
-    font: normal normal bold 22px/32px Montserrat;
-    letter-spacing: -0.88px;
-    color: #63C7A9;
-`
+// export const FormWhiteBoxTitle = styled.p`
+//     text-align: center;
+//     font: normal normal bold 22px/32px Montserrat;
+//     letter-spacing: -0.88px;
+//     color: #63C7A9;
+// `
 
-export const FormWhiteBoxText = styled.p`
-    text-align: left;
-    font: normal normal normal 16px/18px Open Sans;
-    letter-spacing: 0px;
-    color: #363636;
-`
+// export const FormWhiteBoxText = styled.p`
+//     text-align: left;
+//     font: normal normal normal 16px/18px Open Sans;
+//     letter-spacing: 0px;
+//     color: #363636;
+// `
 
-export const Footer = styled.footer`
-    height: 300px;
-    background: #363636 0% 0% no-repeat padding-box;
-`
+// export const Footer = styled.footer`
+//     height: 300px;
+//     background: #363636 0% 0% no-repeat padding-box;
+// `
 
-export const GoTopButton = styled.button`
-    border-radius: 50%;
-    border-color: red;
-    height: 20%;
-    width: 5%;
-`
+// export const GoTopButton = styled.button`
+//     border-radius: 50%;
+//     border-color: red;
+//     height: 20%;
+//     width: 5%;
+// `

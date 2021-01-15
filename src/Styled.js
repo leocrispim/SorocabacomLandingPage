@@ -159,12 +159,27 @@ export const ThirdContainer = styled.div`
 
 export const FormWhiteBox = styled.div`
     position: absolute;
-    height: 130%;
-    width: 50%;
+    height: 112%;
+    width: 42%;
     background-color: white;
     top: -16%;
-    left: 25%;
-    border-radius: 10px;
+    left: 20.5%;
+    border-radius: 6px;
+    padding: 3% 8% 3% 8%;
+`
+
+export const FormWhiteBoxTitle = styled.p`
+    text-align: center;
+    font: normal normal bold 22px/32px Montserrat;
+    letter-spacing: -0.88px;
+    color: #63C7A9;
+`
+
+export const FormWhiteBoxText = styled.p`
+    text-align: left;
+    font: normal normal normal 16px/18px Open Sans;
+    letter-spacing: 0px;
+    color: #363636;
 `
 
 export const Footer = styled.footer`

@@ -137,10 +137,9 @@ export const SecondContainer = styled.div`
     width: 1920px;
     height: 1147px;
     background: #363636 0% 0% no-repeat padding-box;
-    display: grid;
+    /* display: grid;
     grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 101px;
+    grid-column-gap: 101px; */
     position: relative;
 `
 
@@ -151,6 +150,8 @@ export const CharacterCardContainer = styled.div`
     width: 364px;
     height: 440px;
     top: 206.88px;
+    left: 288px;
+    position: absolute;
 `
 
 export const CharacterCardImage = styled.img`
@@ -160,15 +161,42 @@ export const CharacterCardImage = styled.img`
     /* box-shadow: 0px 3px 6px #FF060629; */
     border-radius: 99px;
     background: transparent url(${Grant}) 0% 0% no-repeat padding-box;
+    top: 118px;
+    left: 284px;
 `
 
 export const CharacterCardWhiteBox = styled.div`
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 27px;
     /* box-shadow: 0px 3px 6px #FFFFFF63; */
+    top: 299px;
+    left: 280px;
     width: 387px;
     height: 613px;
-    margin-top: 65%;
+    position: absolute;
+`
+
+export const CharacterCardWhiteBox2 = styled.div`
+    display: inline-block;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 27px;
+    /* box-shadow: 0px 3px 6px #FFFFFF63; */
+    top: 299px;
+    left: 767px;
+    width: 387px;
+    height: 613px;
+    position: relative;
+`
+
+export const CharacterCardWhiteBox3 = styled.div`
+    display: inline-block;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 27px;
+    /* box-shadow: 0px 3px 6px #FFFFFF63; */
+    top: 299px;
+    left: 1253px;
+    width: 387px;
+    height: 613px;
     position: relative;
 `
 
@@ -182,8 +210,8 @@ export const CharacterWhiteBoxText = styled.p`
 export const CharacterSwitchArrow = styled.button`
     border-radius: 50%;
     border-color: red;
-    height: 12%;
-    width: 60%;
+    /* height: 12%;
+    width: 60%; */
     justify-self: right;
     align-self: center;
 `
@@ -191,8 +219,8 @@ export const CharacterSwitchArrow = styled.button`
 export const CharacterSwitchArrow2 = styled.button`
     border-radius: 50%;
     border-color: red;
-    height: 12%;
-    width: 60%;
+    /* height: 12%;
+    width: 60%; */
     justify-self: left;
     align-self: center;
 `

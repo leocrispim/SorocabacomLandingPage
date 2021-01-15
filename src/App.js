@@ -33,16 +33,16 @@ function App() {
     </SC.FirstContainer>
 
     <SC.SecondContainer>
-      <SC.CharacterSwitchArrow />
+      {/* <SC.CharacterSwitchArrow /> */}
 
       <SC.CharacterCardWhiteBox>
-        <SC.CharacterCardContainer>
-          <SC.CharacterCardImage/>
-        </SC.CharacterCardContainer>
         <SC.CharacterWhiteBoxText>A Camerata foi apenas os dois no início, e suas fileiras nunca foram destinadas a exceder um número a ser contado em uma mão.</SC.CharacterWhiteBoxText>
       </SC.CharacterCardWhiteBox>
+      <SC.CharacterCardContainer>
+      </SC.CharacterCardContainer>
+      <SC.CharacterCardImage/>
 
-      <SC.CharacterCardWhiteBox>
+      {/* <SC.CharacterCardWhiteBox>
         <SC.CharacterCardContainer>
           <SC.CharacterCardImage/>
         </SC.CharacterCardContainer>
@@ -54,9 +54,9 @@ function App() {
           <SC.CharacterCardImage/>
         </SC.CharacterCardContainer>
         <SC.CharacterWhiteBoxText>Sybil é descrita pelo Transistor como sendo os "olhos e ouvidos" da Camerata.</SC.CharacterWhiteBoxText>
-      </SC.CharacterCardWhiteBox>
+      </SC.CharacterCardWhiteBox> */}
 
-      <SC.CharacterSwitchArrow2 />
+      {/* <SC.CharacterSwitchArrow2 /> */}
     </SC.SecondContainer>
 
     {/* <SC.ThirdContainer>

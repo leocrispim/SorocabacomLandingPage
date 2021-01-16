@@ -52,6 +52,7 @@ export const FirstContainer = styled.div`
     left: 0px;
     width: 1920px;
     height: 1080px;
+    filter: contrast(125%);
 `
 
 export const GameCardContainer = styled.div`
@@ -89,26 +90,26 @@ export const FeatherContainer = styled.div`
 
 export const TopRightFeather = styled.img`
     position: absolute;
-    bottom: 510px;
-    width: 181px;
-    left: 200px;
-    height: 155px;
+    bottom: 525px;
+    left: 210px;
+    width: 199.1px;
+    height: 170.5px;
 `
 
 export const BottomRightFeather = styled.img`
     position: relative;
-    width: 157px;
-    height: 155px;
-    left: 290px;
-    bottom: 344px;
+    width: 172.7px;
+    height: 170.5px;
+    left: 296px;
+    bottom: 356px;
 `
 
 export const MidLeftFeather = styled.img`
     position: absolute;
-    width: 130px;
-    height: 120px;
+    width: 143px;
+    height: 132px;
     bottom: 497px;
-    left: -238px;
+    left: -249px;
 `
 
 export const GameCardTitle = styled.p`

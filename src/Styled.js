@@ -1,8 +1,7 @@
 import styled from 'styled-components'
 import { createGlobalStyle } from 'styled-components';
-import FirstBackground from './Images/FirstBG@2.png';
+import FirstBackground from './Images/FirstBG.png';
 import CardBackground from './Images/CardBackground.svg';
-import Grant from './Images/Grant.png';
 
 export const GlobalStyle = createGlobalStyle`
     body{
@@ -23,7 +22,7 @@ export const Header = styled.header`
     width: 1920px;
     height: 109px;
     background: #363636 0% 0% no-repeat padding-box;
-    font: bold 23px/36px Montserrat;
+    font: bold 23px/36px 'Montserrat';
     text-align: left;
     letter-spacing: 0.68px;
     color: #FFFFFF;
@@ -47,6 +46,7 @@ export const FirstContainer = styled.div`
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 10fr;
     background: transparent url(${FirstBackground}) 0% 0% no-repeat padding-box;
+    background-size: cover;
     opacity: 0.85;
     top: 0px;
     left: 0px;
@@ -56,26 +56,25 @@ export const FirstContainer = styled.div`
 
 export const GameCardContainer = styled.div`
     background: transparent url(${CardBackground}) 0% 33% no-repeat padding-box;
-    /* box-shadow: 0px 3px 6px #00000099; */
     grid-row: 2;
     grid-column: 2;
     display: grid;
     grid-template-rows: 0.2fr 6fr 25%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     top: 0px;
-    left: 667px;
-    width: 586px;
+    left: -4px;
+    width: 593px;
     height: 1080px;
     justify-self: center;
     justify-items: center;
+    position: relative;
 `
 
 export const GameImageCardImg = styled.img`
-    top: 163px;
-    left: 700px;
-    height: 754px;
-    width: 526px;
-    /* box-shadow: 0px 3px 6px #00000099; */
+    position: relative;
+    left: 6px;
+    height: 769px;
+    width: 536px;
     border-radius: 196px;
     grid-column-start: 1;
     grid-column-end: 6;
@@ -83,27 +82,34 @@ export const GameImageCardImg = styled.img`
     padding-bottom: 8px;
 `
 
-// export const FeatherContainer = styled.div`
-//     grid-row: 3;
-//     position: absolute;
-// `
+export const FeatherContainer = styled.div`
+    grid-row: 3;
+    position: absolute;
+`
 
-// export const TopRightFeather = styled.img`
-//     position: relative;
-//     right: 30%;
-// `
+export const TopRightFeather = styled.img`
+    position: absolute;
+    bottom: 510px;
+    width: 181px;
+    left: 200px;
+    height: 155px;
+`
 
-// export const BottomRightFeather = styled.img`
-//     position: relative;
-//     right: 60%;
-// `
+export const BottomRightFeather = styled.img`
+    position: relative;
+    width: 157px;
+    height: 155px;
+    left: 290px;
+    bottom: 344px;
+`
 
-// export const MidLeftFeather = styled.img`
-//     position: absolute;
-//     left: -8.3%;
-//     bottom: -93.7%;
-//     height: 55%;
-// `
+export const MidLeftFeather = styled.img`
+    position: absolute;
+    width: 130px;
+    height: 120px;
+    bottom: 497px;
+    left: -238px;
+`
 
 export const GameCardTitle = styled.p`
     top: 121px;
@@ -112,7 +118,7 @@ export const GameCardTitle = styled.p`
     height: 20px;
     margin-left: 30px;
     text-align: center;
-    font: normal normal bold 15px/18px Open Sans;
+    font: normal normal bold 15px/18px 'Open Sans';
     letter-spacing: 0px;
     color: #FFFFFF;
     grid-column-start: 1;
@@ -125,10 +131,9 @@ export const GameCardText = styled.p`
     width: 271px;
     height: 121px;
     text-align: center;
-    font: normal normal normal 20px/21px Open Sans;
+    font: normal normal normal 20px/21px 'Open Sans';
     letter-spacing: 0px;
     color: #F0F0F2;
-    /* text-shadow: 0px 3px 6px #00000029; */
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row: 3;
@@ -137,7 +142,7 @@ export const GameCardText = styled.p`
 export const SecondContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 10fr 0.1fr;
     background: #363636 0% 0% no-repeat padding-box;
     height: 1147px;
     width: 1920px;
@@ -210,23 +215,41 @@ export const CharacterWhiteBoxText = styled.p`
     height: 153px;
 `
 
-// export const CharacterSwitchArrow = styled.button`
-//     border-radius: 50%;
-//     border-color: red;
-//     height: 12%;
-//     width: 60%;
-//     justify-self: right;
-//     align-self: center;
-// `
+export const CharacterSwitchArrow = styled.button`
+    position: relative;
+    left:142px;
+    bottom: 641.2px;
+    width: 40px;
+    height: 32px;
+    grid-row: 2;
+    outline: none;
+    background: #363636 0% 0% no-repeat padding-box;
+    border: none;
+`
 
-// export const CharacterSwitchArrow2 = styled.button`
-//     border-radius: 50%;
-//     border-color: red;
-//     height: 12%;
-//     width: 60%;
-//     justify-self: left;
-//     align-self: center;
-// `
+export const SwitchArrowIcon = styled.img`
+    background: #363636 0% 0% no-repeat padding-box;
+    width: 51px;
+    height: 63px;
+`
+
+export const CharacterSwitchArrow2 = styled.button`
+    position: relative;
+    left: 1090px;
+    bottom: 641.2px;
+    width: 40px;
+    height: 32px;
+    grid-row: 2;
+    outline: none;
+    background: #363636 0% 0% no-repeat padding-box;
+    border: none;
+`
+
+export const SwitchArrowIcon2 = styled.img`
+    background: #363636 0% 0% no-repeat padding-box;
+    width: 51px;
+    height: 63px;
+`
 
 export const ThirdContainer = styled.div`
     display: flex;
@@ -271,7 +294,6 @@ export const FormWhiteBoxText = styled.p`
 
 export const FormWrapper = styled.form`
     position: relative;
-    /* top: 20px; */
     top: 150px;
     width: 528px;
     height: 400px;
@@ -342,9 +364,20 @@ export const Footer = styled.footer`
     background: #363636 0% 0% no-repeat padding-box;
 `
 
-// export const GoTopButton = styled.button`
-//     border-radius: 50%;
-//     border-color: red;
-//     height: 20%;
-//     width: 5%;
-// `
+export const GoTopButton = styled.button`
+    position: relative;
+    width: 107px;
+    height: 107px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 50%;
+    left: 1670px;
+    top: 98px;
+    outline: none;
+`
+
+export const GoTopIcon = styled.img`
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    width: 41px;
+    height: 50px;
+    border-radius: 20%;
+`

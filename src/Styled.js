@@ -66,6 +66,7 @@ export const GameCardContainer = styled.div`
     left: 667px;
     width: 586px;
     height: 1080px;
+    justify-self: center;
     justify-items: center;
 `
 
@@ -134,12 +135,12 @@ export const GameCardText = styled.p`
 `
 
 export const SecondContainer = styled.div`
-    width: 1920px;
-    height: 1147px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     background: #363636 0% 0% no-repeat padding-box;
-    /* display: grid;
-    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
-    grid-column-gap: 101px; */
+    height: 1147px;
+    width: 1920px;
     position: relative;
 `
 
@@ -147,119 +148,132 @@ export const CharacterCardContainer = styled.div`
     background: #363636 0% 0% no-repeat padding-box;
     border: 3px solid #FFFFFF;
     border-radius: 86px;
+    left: 10px;
     width: 364px;
     height: 440px;
-    top: 206.88px;
-    left: 288px;
-    position: absolute;
+    top: -92.2px;
+    position: relative;
 `
 
 export const CharacterCardImage = styled.img`
-    position: absolute;
-    width: 379px;
-    height: 525px;
-    /* box-shadow: 0px 3px 6px #FF060629; */
-    border-radius: 99px;
-    background: transparent url(${Grant}) 0% 0% no-repeat padding-box;
-    top: 118px;
-    left: 284px;
+    position: relative;
+    width: 401.92px;
+    height: 556.76px;
+    bottom: 105px;
+    left: -20px;
 `
 
 export const CharacterCardWhiteBox = styled.div`
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border-radius: 27px;
-    /* box-shadow: 0px 3px 6px #FFFFFF63; */
-    top: 299px;
-    left: 280px;
     width: 387px;
     height: 613px;
-    position: absolute;
+    top: 299px;
+    left: 9px;
+    position: relative;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #FFFFFF63;
+    border-radius: 27px;
+    justify-self: right;
 `
 
 export const CharacterCardWhiteBox2 = styled.div`
-    display: inline-block;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border-radius: 27px;
-    /* box-shadow: 0px 3px 6px #FFFFFF63; */
-    top: 299px;
-    left: 767px;
     width: 387px;
     height: 613px;
+    top: 299px;
     position: relative;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #FFFFFF63;
+    border-radius: 27px;
+    justify-self: center;
 `
 
 export const CharacterCardWhiteBox3 = styled.div`
-    display: inline-block;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border-radius: 27px;
-    /* box-shadow: 0px 3px 6px #FFFFFF63; */
-    top: 299px;
-    left: 1253px;
     width: 387px;
     height: 613px;
+    top: 299px;
+    right: 9px;
     position: relative;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #FFFFFF63;
+    border-radius: 27px;
+    justify-self: left;
 `
 
 export const CharacterWhiteBoxText = styled.p`
     text-align: left;
-    font: normal normal normal 20px/25px Open Sans;
+    font: normal normal normal 20px/25px 'Open Sans';
     letter-spacing: 0px;
     color: #363636;
+    position: relative;
+    bottom: 81px;
+    left: 36.5px;
+    width: 326px;
+    height: 153px;
 `
 
-export const CharacterSwitchArrow = styled.button`
-    border-radius: 50%;
-    border-color: red;
-    /* height: 12%;
-    width: 60%; */
-    justify-self: right;
-    align-self: center;
+// export const CharacterSwitchArrow = styled.button`
+//     border-radius: 50%;
+//     border-color: red;
+//     height: 12%;
+//     width: 60%;
+//     justify-self: right;
+//     align-self: center;
+// `
+
+// export const CharacterSwitchArrow2 = styled.button`
+//     border-radius: 50%;
+//     border-color: red;
+//     height: 12%;
+//     width: 60%;
+//     justify-self: left;
+//     align-self: center;
+// `
+
+export const ThirdContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 1920px;
+    height: 742px;
+    background: transparent linear-gradient(143deg, #7DEDE2 0%, #58B790 100%) 0% 0% no-repeat padding-box;
 `
 
-export const CharacterSwitchArrow2 = styled.button`
-    border-radius: 50%;
-    border-color: red;
-    /* height: 12%;
-    width: 60%; */
-    justify-self: left;
-    align-self: center;
+export const FormWhiteBox = styled.div`
+    position: absolute;
+    width: 1082px;
+    height: 832px;
+    background-color: white;
+    border-radius: 5px;
+    bottom: -45px;
 `
 
-// export const ThirdContainer = styled.div`
-//     position: relative;
-//     height: 80vh;
-//     background: transparent linear-gradient(143deg, #7DEDE2 0%, #58B790 100%) 0% 0% no-repeat padding-box;
-// `
+export const FormWhiteBoxTitle = styled.p`
+    position: relative;
+    top: 82.83px;
+    text-align: center;
+    font: normal normal bold 22px/32px Montserrat;
+    letter-spacing: -0.88px;
+    color: #63C7A9;
+    margin: 0;
+`
 
-// export const FormWhiteBox = styled.div`
-//     position: absolute;
-//     height: 100%;
-//     width: 42%;
-//     background-color: white;
-//     top: -6.5%;
-//     left: 20.5%;
-//     border-radius: 5px;
-//     padding: 1.5% 8% 3% 8%;
-// `
+export const FormWhiteBoxText = styled.p`
+    position: relative;
+    top: 123.85px;
+    left: 193px;
+    width: 746px;
+    height: 77px;
+    text-align: left;
+    font: normal normal normal 20px/21px 'Open Sans';
+    letter-spacing: 0px;
+    color: #363636;
+    margin: 0;
+`
 
-// export const FormWhiteBoxTitle = styled.p`
-//     text-align: center;
-//     font: normal normal bold 22px/32px Montserrat;
-//     letter-spacing: -0.88px;
-//     color: #63C7A9;
-// `
-
-// export const FormWhiteBoxText = styled.p`
-//     text-align: left;
-//     font: normal normal normal 16px/18px Open Sans;
-//     letter-spacing: 0px;
-//     color: #363636;
-// `
-
-// export const Footer = styled.footer`
-//     height: 300px;
-//     background: #363636 0% 0% no-repeat padding-box;
-// `
+export const Footer = styled.footer`
+    height: 410px;
+    width: 1920px;
+    background: #363636 0% 0% no-repeat padding-box;
+`
 
 // export const GoTopButton = styled.button`
 //     border-radius: 50%;

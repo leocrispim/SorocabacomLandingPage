@@ -36,30 +36,30 @@ function App() {
       {/* <SC.CharacterSwitchArrow /> */}
 
       <SC.CharacterCardWhiteBox>
+        <SC.CharacterCardContainer>
+          <SC.CharacterCardImage src={Grant} />
+        </SC.CharacterCardContainer>
         <SC.CharacterWhiteBoxText>A Camerata foi apenas os dois no início, e suas fileiras nunca foram destinadas a exceder um número a ser contado em uma mão.</SC.CharacterWhiteBoxText>
       </SC.CharacterCardWhiteBox>
-      <SC.CharacterCardContainer>
-      </SC.CharacterCardContainer>
-      <SC.CharacterCardImage/>
 
-      {/* <SC.CharacterCardWhiteBox>
+      <SC.CharacterCardWhiteBox2>
         <SC.CharacterCardContainer>
-          <SC.CharacterCardImage/>
+        <SC.CharacterCardImage src={Red} />
         </SC.CharacterCardContainer>
         <SC.CharacterWhiteBoxText>Red, uma jovem cantora, entrou em posse do Transistor. Sendo a poderosa espada falante. O Grupo Possessores quer tanto ela quanto o Transistor e está perseguindo implacavelmente a sua procura.</SC.CharacterWhiteBoxText>
-      </SC.CharacterCardWhiteBox>
+      </SC.CharacterCardWhiteBox2>
 
-      <SC.CharacterCardWhiteBox>
+      <SC.CharacterCardWhiteBox3>
         <SC.CharacterCardContainer>
-          <SC.CharacterCardImage/>
+        <SC.CharacterCardImage src={Sybil} />
         </SC.CharacterCardContainer>
         <SC.CharacterWhiteBoxText>Sybil é descrita pelo Transistor como sendo os "olhos e ouvidos" da Camerata.</SC.CharacterWhiteBoxText>
-      </SC.CharacterCardWhiteBox> */}
+      </SC.CharacterCardWhiteBox3>
 
       {/* <SC.CharacterSwitchArrow2 /> */}
     </SC.SecondContainer>
 
-    {/* <SC.ThirdContainer>
+    <SC.ThirdContainer>
       <SC.FormWhiteBox>
         <SC.FormWhiteBoxTitle>FORMULÁRIO</SC.FormWhiteBoxTitle>
         <SC.FormWhiteBoxText>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</SC.FormWhiteBoxText>
@@ -67,8 +67,8 @@ function App() {
     </SC.ThirdContainer>
 
     <SC.Footer>
-      <SC.GoTopButton />
-    </SC.Footer>  */}
+      {/* <SC.GoTopButton /> */}
+    </SC.Footer> 
   </>
   );
 }

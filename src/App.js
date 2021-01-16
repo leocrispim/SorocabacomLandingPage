@@ -14,7 +14,7 @@ function App() {
      <SC.FirstContainer>
       <SC.Header>
         <SC.HeaderLogo src={GiantGamesLogo}/>
-        SUPERGIANT GAMES
+        SUPERGIANTGAMES
       </SC.Header>
 
       <SC.GameCardContainer>
@@ -63,6 +63,17 @@ function App() {
       <SC.FormWhiteBox>
         <SC.FormWhiteBoxTitle>FORMULÁRIO</SC.FormWhiteBoxTitle>
         <SC.FormWhiteBoxText>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</SC.FormWhiteBoxText>
+
+        <SC.FormWrapper>
+          <SC.SmallInput type="text" placeholder="Nome"></SC.SmallInput>
+          <SC.SmallInput2 type="text" placeholder="Email"></SC.SmallInput2>
+          <SC.LargeInput type="text" placeholder="Mensagem"></SC.LargeInput>
+          <SC.SendButton>ENVIAR</SC.SendButton>
+        </SC.FormWrapper>
+
+
+
+
       </SC.FormWhiteBox>
     </SC.ThirdContainer>
 

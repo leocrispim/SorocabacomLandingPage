@@ -269,6 +269,73 @@ export const FormWhiteBoxText = styled.p`
     margin: 0;
 `
 
+export const FormWrapper = styled.form`
+    position: relative;
+    /* top: 20px; */
+    top: 150px;
+    width: 528px;
+    height: 400px;
+    left: 277.44px;
+    gap: 10px;
+    place-content: center;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-column-gap: 21.64px;
+    grid-row-gap: 39.79px;
+`
+
+export const SmallInput = styled.input`
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    width: 249px;
+    height: 48px;
+    text-indent: 10px;
+    font: normal normal normal 18px/30px 'Open Sans';
+`
+
+export const SmallInput2 = styled.input`
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    width: 249px;
+    height: 48px;
+    text-indent: 10px;
+    font: normal normal normal 18px/30px 'Open Sans';
+`
+
+export const LargeInput = styled.textarea`
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    width: 528px;
+    height: 197px;
+    text-indent: 10px;
+    padding-top: 14.25px;
+    text-align: left;
+    font: normal normal normal 18px/30px 'Open Sans';
+    resize: none;
+`
+
+export const SendButton = styled.button`
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    width: 249px;
+    height: 48px;
+    margin-right: 7px;
+    border: none;
+    background: #63C7A9 0% 0% no-repeat padding-box;
+    font: normal normal normal 18px/30px 'Open Sans';
+    color: #FFFFFF;
+`
+
 export const Footer = styled.footer`
     height: 410px;
     width: 1920px;

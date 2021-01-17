@@ -12,6 +12,11 @@ import ArrowUp from './Images/transparent-uparrow.png'
 import ArrowLeft from './Images/left-arrow.png'
 import ArrowRight from './Images/right-arrow.png'
 
+///---
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import ReactDOM from 'react-dom';
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -58,7 +63,26 @@ class App extends Component {
       </SC.FirstContainer>
   
       <SC.SecondContainer>
-        <SC.CharacterSwitchArrow>
+      <Carousel showArrows={true} onChange={onChange} onClickItem={onClickItem} onClickThumb={onClickThumb}>
+                <div>
+                    <img src={Red} />
+                    <p className="legend">Legend 1</p>
+                </div>
+                <div>
+                    <img src={Red} />
+                    <p className="legend">Legend 2</p>
+                </div>
+                <div>
+                  <img src={Red} />
+                    <p className="legend">Legend 3</p>
+                </div>
+                <div>
+                 <img src={Red} />
+                    <p className="legend">Legend 4</p>
+                </div>
+            </Carousel>
+
+        {/* <SC.CharacterSwitchArrow>
           <SC.SwitchArrowIcon src={ArrowLeft}/>
         </SC.CharacterSwitchArrow>
   
@@ -85,14 +109,13 @@ class App extends Component {
   
         <SC.CharacterSwitchArrow2>
           <SC.SwitchArrowIcon src={ArrowRight}/>
-        </SC.CharacterSwitchArrow2>
+        </SC.CharacterSwitchArrow2> */}
       </SC.SecondContainer>
   
       <SC.ThirdContainer>
         <SC.FormWhiteBox>
           <SC.FormWhiteBoxTitle>FORMULÁRIO</SC.FormWhiteBoxTitle>
           <SC.FormWhiteBoxText>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</SC.FormWhiteBoxText>
-  
           <SC.FormWrapper onSubmit={this.handleSubmit}>
             <SC.SmallInput type="text" placeholder="Nome" name="name" value={name} onChange={this.handleFieldChange} required></SC.SmallInput>
             <SC.SmallInput2 type="email"
@@ -114,7 +137,6 @@ class App extends Component {
     </>
     );
   }
-
 }
 
 export default App;

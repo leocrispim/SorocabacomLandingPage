@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import { createGlobalStyle } from 'styled-components';
 import FirstBackground from './Images/FirstBG.png';
 import CardBackground from './Images/CardBackground.svg';
@@ -48,11 +48,15 @@ export const FirstContainer = styled.div`
     background: transparent url(${FirstBackground}) 0% 0% no-repeat padding-box;
     background-size: cover;
     opacity: 0.85;
-    top: 0px;
-    left: 0px;
     width: 1920px;
     height: 1080px;
     filter: contrast(125%);
+
+    //-- Ipad Version
+    @media (max-width: 1024px) {
+        margin-left: -80%;
+  }
+
 `
 
 export const GameCardContainer = styled.div`

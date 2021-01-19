@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import { createGlobalStyle } from 'styled-components';
 import FirstBackground from './Images/FirstBG.png';
 import CardBackground from './Images/CardBackground.svg';

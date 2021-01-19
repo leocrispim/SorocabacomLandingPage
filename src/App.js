@@ -11,6 +11,9 @@ import MidLeftFeather from './Images/Feather-midleft.png';
 import ArrowUp from './Images/transparent-uparrow.png'
 import ArrowLeft from './Images/left-arrow.png'
 import ArrowRight from './Images/right-arrow.png'
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 class App extends Component {
   constructor(props) {
@@ -39,7 +42,7 @@ class App extends Component {
 
     return (
     <>
-       <SC.FirstContainer>
+       <SC.FirstContainer id="section1">
         <SC.Header>
           <SC.HeaderLogo src={GiantGamesLogo}/>
           SUPERGIANTGAMES
@@ -56,8 +59,25 @@ class App extends Component {
           </SC.FeatherContainer>
         </SC.GameCardContainer>
       </SC.FirstContainer>
+
+      <Carousel showArrows={true} renderIndicator={false}>
+        <div>
+          <img src={Grant}/>
+          <p className="Legend">Qualquer coisa</p>
+        </div>
+
+        <div>
+          <img src={Red}/>
+          <p className="Legend">Algo ai</p>
+        </div>
+
+        <div>
+          <img src={Sybil}/>
+          <p className="Legend">Hue hue</p>
+        </div>
+      </Carousel>
   
-      <SC.SecondContainer>
+      {/* <SC.SecondContainer>
         <SC.CharacterSwitchArrow>
           <SC.SwitchArrowIcon src={ArrowLeft}/>
         </SC.CharacterSwitchArrow>
@@ -86,7 +106,7 @@ class App extends Component {
         <SC.CharacterSwitchArrow2>
           <SC.SwitchArrowIcon src={ArrowRight}/>
         </SC.CharacterSwitchArrow2>
-      </SC.SecondContainer>
+      </SC.SecondContainer> */}
   
       <SC.ThirdContainer>
         <SC.FormWhiteBox>
@@ -107,10 +127,19 @@ class App extends Component {
       </SC.ThirdContainer>
   
       <SC.Footer>
-        <SC.GoTopButton>
-          <SC.GoTopIcon src={ArrowUp}/>
-        </SC.GoTopButton>
-      </SC.Footer> 
+        <Link
+            activeClass="active"
+            to="section1"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+        >
+          <SC.GoTopButton>
+            <SC.GoTopIcon src={ArrowUp}/>
+          </SC.GoTopButton>
+        </Link>
+      </SC.Footer>
     </>
     );
   }

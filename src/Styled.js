@@ -144,14 +144,16 @@ export const GameCardText = styled.p`
     grid-row: 3;
 `
 
-export const SecondContainer = styled.div`
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 10fr 0.1fr;
-    background: #363636 0% 0% no-repeat padding-box;
+export const TestDiv = styled.div`
     height: 1147px;
     width: 1920px;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    background: #363636 0% 0% no-repeat padding-box;
+`
+
+export const SlideDiv = styled.div`
+    background: #363636 0% 0% no-repeat padding-box;
 `
 
 export const CharacterCardContainer = styled.div`
@@ -159,9 +161,9 @@ export const CharacterCardContainer = styled.div`
     border: 3px solid #FFFFFF;
     border-radius: 86px;
     left: 10px;
+    top: -92.2px;
     width: 364px;
     height: 440px;
-    top: -92.2px;
     position: relative;
 `
 
@@ -176,36 +178,36 @@ export const CharacterCardImage = styled.img`
 export const CharacterCardWhiteBox = styled.div`
     width: 387px;
     height: 613px;
-    top: 299px;
-    left: 9px;
+    /* top: 299px;
+    left: 9px; */
     position: relative;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #FFFFFF63;
     border-radius: 27px;
-    justify-self: right;
+    /* justify-self: right; */
 `
 
 export const CharacterCardWhiteBox2 = styled.div`
     width: 387px;
     height: 613px;
-    top: 299px;
+    /* top: 299px; */
     position: relative;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #FFFFFF63;
     border-radius: 27px;
-    justify-self: center;
+    /* justify-self: center; */
 `
 
 export const CharacterCardWhiteBox3 = styled.div`
     width: 387px;
     height: 613px;
-    top: 299px;
-    right: 9px;
+    /* top: 299px;
+    right: 9px; */
     position: relative;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #FFFFFF63;
     border-radius: 27px;
-    justify-self: left;
+    /* justify-self: left; */
 `
 
 export const CharacterWhiteBoxText = styled.p`

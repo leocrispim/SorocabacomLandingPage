@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import { createGlobalStyle } from 'styled-components';
 import FirstBackground from './Images/FirstBG.png';
 import CardBackground from './Images/CardBackground.svg';
@@ -6,43 +6,73 @@ import CardBackground from './Images/CardBackground.svg';
 export const GlobalStyle = createGlobalStyle`
     body{
         margin: 0;
+        top: 945px;
+        height: 2505px;
+        width: 1920px;
+        background: transparent linear-gradient(143deg, #7DEDE2 0%, #58B790 100%) 0% 0% no-repeat padding-box;
     }
-`
-
-export const FirstContainer = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 1080px;
-    width: 100vw;
-    background: transparent url(${FirstBackground}) 0% 0% no-repeat padding-box;
 `
 
 export const Header = styled.header`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #363636;
-    position: relative;
-    width: 100vw;
+    top: 0px;
+    left: 0px;
+    width: 1920px;
     height: 109px;
+    background: #363636 0% 0% no-repeat padding-box;
     font: bold 23px/36px 'Montserrat';
     text-align: left;
     letter-spacing: 0.68px;
     color: #FFFFFF;
     text-transform: uppercase;
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
 `
 
 export const HeaderLogo = styled.img`
+    top: 0px;
+    left: 749px;
     width: 109px;
     height: 109px;
+    margin-left: -60px;
+    padding-right: 30px;
+`
+
+export const FirstContainer = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 10fr;
+    background: transparent url(${FirstBackground}) 0% 0% no-repeat padding-box;
+    background-size: cover;
+    opacity: 0.85;
+    width: 1920px;
+    height: 1080px;
+    filter: contrast(125%);
+
+    //-- Ipad Version
+    @media (max-width: 1024px) {
+        margin-left: -80%;
+  }
+
 `
 
 export const GameCardContainer = styled.div`
     background: transparent url(${CardBackground}) 0% 33% no-repeat padding-box;
-    width: 586px;
+    grid-row: 2;
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: 0.2fr 6fr 25%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    top: 0px;
+    left: -4px;
+    width: 593px;
     height: 1080px;
+    justify-self: center;
+    justify-items: center;
+    position: relative;
 `
 
 export const GameImageCardImg = styled.img`

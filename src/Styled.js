@@ -43,6 +43,10 @@ export const GameCardContainer = styled.div`
     background: transparent url(${CardBackground}) 0% 33% no-repeat padding-box;
     width: 586px;
     height: 1080px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 `
 
 export const GameImageCardImg = styled.img`
@@ -51,9 +55,6 @@ export const GameImageCardImg = styled.img`
     height: 769px;
     width: 536px;
     border-radius: 196px;
-    grid-column-start: 1;
-    grid-column-end: 6;
-    grid-row: 2;
     padding-bottom: 8px;
 `
 
@@ -87,17 +88,13 @@ export const MidLeftFeather = styled.img`
 `
 
 export const GameCardTitle = styled.p`
-    top: 121px;
-    left: 697px;
+    position: relative;
+    left: -25%;
     width: 240px;
     height: 20px;
     margin-left: 30px;
-    text-align: center;
     font: normal normal bold 15px/18px 'Open Sans';
-    letter-spacing: 0px;
     color: #FFFFFF;
-    grid-column-start: 1;
-    grid-column-end: 3;
 `
 
 export const GameCardText = styled.p`

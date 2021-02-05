@@ -106,9 +106,6 @@ export const GameCardText = styled.p`
     font: normal normal normal 20px/21px 'Open Sans';
     letter-spacing: 0px;
     color: #F0F0F2;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row: 3;
 `
 
 export const CarouselDiv = styled.div`
